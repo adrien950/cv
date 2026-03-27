@@ -1,0 +1,159 @@
+% cv example for classicthesis.sty
+%\documentclass[9pt]{scrartcl}
+\documentclass[9pt,a4paper]{article}
+%\documentclass[9pt,a4paper]{scrartcl}
+\usepackage[LabelsAligned]{currvita} % nice cv style
+\usepackage{url}
+\usepackage[ngerman]{babel}
+\usepackage[nochapters]{classicthesis}
+\usepackage{xcolor}
+\usepackage{hyperref}
+%\usepackage{nopageno}
+% Some font experiments
+%\usepackage[osf]{libertine}
+%\usepackage{hfoldsty}
+%\usepackage[math]{iwona} %[light,condensed,math]
+%\renewcommand{\sfdefault}{iwona}
+%\usepackage{lmodern} % <-- no osf support :-(
+%\usepackage[urw-garamond]{mathdesign} %<-- no osf support :-(
+\usepackage{verbatim} % for \begin{comment}
+\usepackage[a4paper, total={7in, 10.6in}]{geometry}
+\usepackage{array}
+\usepackage{ragged2e}
+
+\renewcommand*{\cvheadingfont}{\LARGE\color{Maroon}}
+\renewcommand*{\cvlistheadingfont}{\large}
+\renewcommand*{\cvlabelfont}{\qquad}
+
+\date{}
+\begin{document}
+\pagestyle{empty}
+    \begin{cv}{\spacedallcaps{Curriculum Vit\ae}}
+        %\pdfbookmark[1]{Personal data}{PersDat}
+        \begin{Center}
+        \begin{Large}
+        Adrien T'Kint\\
+        \vspace{2.5mm}
+        \end{Large}
+        \begin{large}
+        \textit{Results-driven multilingual engineer bridging R\&D expertise and management training.\\
+        Social, ambitious and eager to learn.
+        }
+        \end{large}
+        \end{Center}
+        \begin{cvlist}{\textcolor{Maroon}{P}\spacedlowsmallcaps{ersonal information}}\label{PersDat}  
+            \item[ ]
+            \begin{tabular}{ | p{5cm} | p{5cm} }
+                Birth date: $5^{th}$ of April $1993$ & Address: Rue des Francs $11$, $1040$ Brussels\\
+                Phone: $+32$ $491/91$ $91$ $40$ & E-mail: \href{mailto:adtkint@gmail.com}{adtkint@gmail.com}\\
+            \end{tabular}
+            %\item   Adrien T'Kint
+            \item[Birth date] $5^{th}$ of April $1993$	
+            % \item[Nationality] Belgian and Canadian nationalities
+            \item[Address] Rue des Francs $11$, $1040$ Brussels
+            \item[Phone] $+32$ $491/91$ $91$ $40$
+            \item[E-mail]\href{mailto:adtkint@gmail.com}{adtkint@gmail.com}
+        \end{cvlist}
+       
+        %\pdfbookmark[1]{Irgendwas}{irgendwas}
+        \begin{cvlist}{\textcolor{Maroon}{W}\spacedlowsmallcaps{ork experiences}}\label{Experience}
+            \item[2021 $\rightarrow$ present] \textbf{Main systems engineer, then Product lead \& Engineering team lead at Perseus Biomics, Leuven}\\
+            Driving the technical success of the MetaMAP, the flagship automated microbiome analyzer of Perseus Biomics by: % automated microbiome analyzer
+            \begin{itemize}
+                \item Coordinating and aligning the efforts of internal and external experts in mechanics, electronics, software, firmware, microscopy and biochemistry using Gitlab issues and milestones
+				\item Identifying, monitoring and mitigating development risks through structured risk analysis, proofs of concept and quantitative performance comparisons
+                \item Progressively assuming ownership of the agile execution of the strategic product roadmap
+                \item Key-contributor to multiple technical aspects of the device, from its first conceptual design (e.g. microscope architecture, thermal management) to its development (e.g. scanning routine coding, motor drivers optimization) all the way to its acceptance testing (e.g. measurement of the optical performances, functional testing)
+                %/measurement of the optical resolution and of the illumination homogeneity, determination of the sources of background
+                %/design of a fibered dual color illumination system including the selection of the laser diodes, their TEC and current drivers and the despeckler, organizing the splicing of the components.
+                %/test and selection of the autofocus metric
+                %/Removal of the image's background
+                \item Ensuring device safety and successful CE marking
+			\end{itemize}
+%            \item[2021 $\rightarrow$ 2025] \textbf{Main system engineer for biomedical instrumentation at Perseus Biomics, Leuven}\\
+%            Driving the technical success of the MetaMAP, the flagship automated microbiome analyzer of Perseus Biomics by:
+			\item[2018 $\rightarrow$ 2021] \textbf{Systems engineer for optical instrumentation at Lambda-X, Nivelles}\\
+			Consisting in design review, components choice, integration, alignment and testing of optical systems like:
+			\begin{itemize}
+				\item Space: IR telescope for Earth observation \& Optical control system for the study of particles agglomeration in microgravity
+				\item Ophtalmic: Coating viewer dedicated for intra-ocular lenses %Modiff?
+				\item Industrial: Image guided laser system for cell therapy production \& Car door projector
+			\end{itemize}
+	        \item[2017 $\rightarrow$ 2018] \textbf{Mathematics and sciences teacher} at Lyc\'ee de Berlaylmont in Waterloo
+            % \item[2014 August] \textbf{Summer internship} at eXia Belgium, a spin-off company of the Vrije Universiteit Brussel, Dep. Electronics \& Informatics (ETRO)
+ %               \textbf{Function}: Programming of a user interface and a recogni-\\tion algorithm using adaptive signal processing in Matlab
+ %               \textit{This internship really learned me to lead a project by my own, involving a.o. autonomy, creativity and rationality skills}
+            %\item[And numerous student jobs...]
+        \end{cvlist}
+                
+        %\pdfbookmark[1]{Irgendwas}{irgendwas}
+        \begin{cvlist}{\textcolor{Maroon}{E}\spacedlowsmallcaps{ducation}}\label{Education}
+            \item[2016 $\rightarrow$ 2019 ] \textbf{Complementary Master in Management, specialization in Finances, Cum laude}\\
+            At the Solvay Business School of the Universit\'e Libre de Bruxelles
+            \item[2014 $\rightarrow$ 2016 ] \textbf{European Master of Science in Photonics, Summa cum laude}\\
+            Joint degree (Universiteit Gent-Vrije Universiteit Brussel)\\
+            \textbf{Erasmus+} grant for a year at the Karlsruhe Institute of Technology\\
+            \textbf{Master thesis} \textit{Qualification of an optical 3D sensor for industrial applications} at SICK AG
+            \item[2011 $\rightarrow$ 2014] \textbf{Bachelor of Science in Electronics and Information Technology Engineering, Cum laude}\\
+            At the Vrije Universiteit Brussel
+%    \begin{tabular}{r|ccc}
+%                    & $1^{st}$ Ba  & $2^{nd}$ Ba  & $3^{th}$ Ba \\
+%        \hline
+%        Average     & $65$\%        &  $77\%$       & $79\%$ \\
+%    \end{tabular}
+            % \item[2010 $\rightarrow$ 2011] $6^{th}$ secondary year at Bovenbouw Sint-Gertrudis
+            % \item[2005 $\rightarrow$ 2010] First until fifth secondary year at Ath\'en\'ee Royal Jean-Absil
+        \end{cvlist}
+        
+        %\pdfbookmark[1]{Irgendwas}{irgendwas}
+%        \begin{cvlist}{\spacedlowsmallcaps{Languages}}\label{Languages}
+%            \item[Mother tongue] French
+%            \item[Other language] Dutch (very fluent)\\
+%            English (fluent)
+%        \end{cvlist}
+        
+        
+       \begin{cvlist}{\textcolor{Maroon}{S}\spacedlowsmallcaps{kills}}\label{Skills} 
+%            \item[Languages] French: Mother tongue\\
+%                            Dutch: Very fluent\\
+%                            English: Fluent (B$2$)\\
+%                            German: Fluent (B$1.2$)
+			\item[Languages]
+%						\begin{table}[h!]
+%							\centering
+							\begin{tabular}{ | p{5cm} | p{5cm} }
+							French: Mother tongue & Dutch: Very fluent \\
+							English: Fluent (B$2$) & German: Fluent (B$1$)\\
+    						\end{tabular}
+%    					\end{table}
+                            %B$1.1$ pre-semester language course of the KIT ($1.7$), A$1.2$ Sommersprachkurs at IIK Bayreuth ($96.5\%$) and registered for a studienbegleitende Kurs at the Studienkolleg (KIT).
+%            \item[Computer skills] Good knowledge of Assembler Intel 8086 and Atmel 8051 (programmation of microcontroller)\\
+%                            Creation of a computer game in Java\\
+%                            Design of a $3^{th}$ orde passive filter with Matlab and LTspice\\
+%                            Modelling with Autodesk Inventor 3D CAD software\\
+%                            Regular use of Matlab, \LaTeX, MS Word and MS Excel
+           \item[Computer skills] Agentic AI, Python, Matlab, Git, Lumerical, Zemax, Assembler, Java, LTspice, Autodesk Inventor, \LaTeX, Word, Excel...
+\end{cvlist}                           
+                            
+        %\pdfbookmark[1]{Irgendwas}{irgendwas}
+\begin{cvlist}{\textcolor{Maroon}{S}\spacedlowsmallcaps{ocial Life}}			\label{Social life}
+		\item[2022 $\rightarrow$ 2025] Coordinator of more than twenty organizers for the spring-summer trainings of the orienteering sport club ASUB. Main organizer of multiple competitions.
+        \item[2019 $\rightarrow$ 2021] Member in charge of the finances of the local group of a political party in Auderghem
+		\item[2017 $\rightarrow$ 2018] Member of the board of direction of the Jeugd Parlement Jeunesse
+		\item[2015] Main organizer of the summer course for the Board of European Students of Technology% (BEST) in Brussels
+		\item[2010 $\rightarrow$ 2011] Scout leader at F\'ed\'eration des Scouts Baden-Powell de Belgique
+		%\item[Sports] Orienteering, Brussels marathon, tennis, squash, climbing, mountain bike, volleyball, badminton, hockey, football, minigolf...
+\end{cvlist}
+\end{cv}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
