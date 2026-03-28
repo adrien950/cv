@@ -17,9 +17,16 @@
 %\usepackage{lmodern} % <-- no osf support :-(
 %\usepackage[urw-garamond]{mathdesign} %<-- no osf support :-(
 \usepackage{verbatim} % for \begin{comment}
-\usepackage[a4paper, total={7.6in, 11in}]{geometry}
+\usepackage[a4paper, total={7.2in, 11in}]{geometry}
 \usepackage{array}
 \usepackage{ragged2e}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=-4pt, partopsep=0pt, parsep=0pt}
+\usepackage{etoolbox}
+\patchcmd{\cvlist}
+  {\setlength{\topsep}{1\baselineskip plus 2pt minus 2pt}}
+  {\setlength{\topsep}{6pt plus 1pt minus 1pt}}
+  {}{}
 
 \renewcommand*{\cvheadingfont}{\LARGE\color{Maroon}}
 \renewcommand*{\cvlistheadingfont}{\large}
@@ -33,7 +40,7 @@
         \begin{Center}
         \begin{Large}
         \textcolor{Maroon}{\spacedallcaps{Adrien T'Kint}}\\
-        \vspace{1.5mm}
+        \vspace{1mm}
         \end{Large}
         \begin{large}
         \textit{Results-driven multilingual engineer bridging R\&D expertise and management training.\\
@@ -57,7 +64,7 @@
         %\pdfbookmark[1]{Irgendwas}{irgendwas}
         \begin{cvlist}{\textcolor{Maroon}{W}\spacedlowsmallcaps{ork experiences}}\label{Experience}
             \item[2021 $\rightarrow$ present] \textbf{Product lead \& Engineering team lead}, previously Main systems engineer at Perseus Biomics, Leuven\\
-            Driving the technical success of the MetaMAP, the flagship automated microbiome analyzer of Perseus Biomics by: % automated microbiome analyzer
+            Driving the full-cycle technical development of a novel microbiome analyzer in a fast-paced start-up environment by: % automated microbiome analyzer
             \begin{itemize}
                 \item Coordinating and aligning the efforts of internal and external experts in mechanics, electronics, software, firmware, microscopy and biochemistry using Gitlab issues and milestones
 				\item Identifying, monitoring and mitigating development risks through structured risk analysis, proofs of concept and quantitative performance comparisons
@@ -100,7 +107,7 @@
 %        \hline
 %        Average     & $65$\%        &  $77\%$       & $79\%$ \\
 %    \end{tabular}
-            % \item[2010 $\rightarrow$ 2011] $6^{th}$ secondary year at Bovenbouw Sint-Gertrudis
+            \item[2010 $\rightarrow$ 2011] $6^{th}$ secondary year at Bovenbouw Sint-Gertrudis, Landen. Self-initiated crossover to the Dutch-speaking education system after five years at Ath\'en\'ee Royal Jean-Absil.
             % \item[2005 $\rightarrow$ 2010] First until fifth secondary year at Ath\'en\'ee Royal Jean-Absil
         \end{cvlist}
         
